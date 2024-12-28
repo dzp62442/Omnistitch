@@ -126,8 +126,22 @@ if __name__ == "__main__":
         interp_imgs(ppl, ori_img0, ori_img1)
 
 '''
-CUDA_VISIBLE_DEVICES=1 python3 -m scripts.stitch_imgs \
---img0 /home/sooho/workspace/data/GV360_test/test_14m/00000_LD_L.jpg \
---img1 /home/sooho/workspace/data/GV360_test/test_14m/00000_LD_B.jpg \
---save_dir ./demo/output_d0
+CUDA_VISIBLE_DEVICES=0 python3 -m scripts.stitch_imgs \
+--img0 /home/B_UserData/dongzhipeng/Datasets/GV360/GV360_testset/test_14m/00000_LD_L.jpg \
+--img1 /home/B_UserData/dongzhipeng/Datasets/GV360/GV360_testset/test_14m/00000_LD_B.jpg \
+--save_dir ./demo/output_test_14m
+'''
+
+'''
+CUDA_VISIBLE_DEVICES=0 python3 -m scripts.stitch_imgs \
+--img0 /home/B_UserData/dongzhipeng/Datasets/test-omnistitch/00005/0.jpg \
+--img1 /home/B_UserData/dongzhipeng/Datasets/test-omnistitch/00005/1.jpg \
+--save_dir ./demo/output_udis
+'''
+
+'''
+CUDA_VISIBLE_DEVICES=0 python3 -m scripts.stitch_imgs \
+--img0 /home/B_UserData/dongzhipeng/Datasets/test-omnistitch/00000/0_LB.jpg \
+--img1 /home/B_UserData/dongzhipeng/Datasets/test-omnistitch/00000/1_LF.jpg \
+--save_dir ./demo/output_whitecar
 '''

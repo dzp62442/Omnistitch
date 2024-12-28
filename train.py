@@ -328,9 +328,9 @@ if __name__ == "__main__":
         #**********************************************************#
         
         # => args for data loader and rand crop size
-        parser.add_argument('--data_root', default='/home/sooho/workspace/data/GV360_train', \
+        parser.add_argument('--data_root', default='/home/B_UserData/dongzhipeng/Datasets/GV360/GV360_train', \
                 type=str, help='root dir of GV360 trainset')
-        parser.add_argument('--test_data_root', default='/home/sooho/workspace/data/GV360_test', \
+        parser.add_argument('--test_data_root', default='/home/B_UserData/dongzhipeng/Datasets/GV360/GV360_testset', \
                 type=str, help='root dir of GV360 testset')
         parser.add_argument('--batch_size', type=int, default=4,
                 help='batch size for data loader')

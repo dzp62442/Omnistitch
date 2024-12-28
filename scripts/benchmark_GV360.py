@@ -86,7 +86,7 @@ if __name__ == "__main__":
         #**********************************************************#
         
         # => args for dataset and data loader
-        parser.add_argument('--data_root', type=str, default='/home/sooho/workspace/data/GV360_test', \
+        parser.add_argument('--data_root', type=str, default='/home/B_UserData/dongzhipeng/Datasets/GV360/GV360_testset', \
                 help='root dir of GV360 testset')
         parser.add_argument('--save_root', type=str, default='./demo/omnistitch/GV360',
                 help='root dir of predicted result')
